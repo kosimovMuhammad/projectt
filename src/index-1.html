@@ -6,10 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body class="bg-gray-50 font-sans">
+<body>
 
-    <nav class="flex items-center justify-between px-12 py-6">
-        <div class="flex space-x-8 text-gray-600 font-medium ml-auto mr-12">
+<section class="bg-gray-50 font-sans">
+
+    <main class="relative max-w-7xl mx-auto mt-4 px-4 sm:px-6">
+        <nav class="flex gap-40 items-center pr-50 my-5">
+        <div class="lg:flex hidden space-x-8 text-gray-600 font-medium ml-auto mr-12">
             <a href="#" class="hover:text-green-600">Booking</a>
             <a href="#" class="hover:text-green-600">Facilities</a>
             <a href="#" class="hover:text-green-600">About Us</a>
@@ -20,74 +23,161 @@
             Login
         </button>
     </nav>
-
-    <main class="relative max-w-7xl mx-auto mt-4 px-6">
-        <div class="bg-white rounded-[40px] overflow-hidden flex flex-col md:flex-row shadow-sm min-h-[500px]">
+        <div class="bg-white rounded-[30px] sm:rounded-[40px] overflow-hidden flex flex-col md:flex-row shadow-sm 100">
             
-            <div class="w-full md:w-1/2 p-16 flex flex-col justify-center bg-gradient-to-br from-blue-50/50 to-transparent">
-                <h1 class="text-6xl font-bold text-gray-900 leading-tight">
-                    Find your perfect <br> place to stay
+            <div class="w-full md:w-1/2 p-8 sm:p-16 flex flex-col justify-center bg-blue-50/50 to-transparent">
+                <h1 class="text-4xl sm:text-6xl font-bold text-gray-900 leading-tight">
+                    Find your perfect <br class="hidden sm:block"> place to stay
                 </h1>
-                <p class="mt-6 text-gray-500 text-lg max-w-md">
+                <p class="mt-4 sm:mt-6 text-gray-500 text-base sm:text-lg max-w-md">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
                 
-                <div class="mt-10 flex items-center space-x-4 cursor-pointer group">
-                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#27ae60] group-hover:scale-110 transition">
-<img src="./Layer 2.png" alt="">                    </div>
-                    <span class="font-semibold text-gray-800">Watch video</span>
+                <div class="mt-8 sm:mt-10 flex items-center space-x-4 cursor-pointer group">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#27ae60]">
+<img src="./Layer 2.png" alt="">  
+                  </div>
+                    <span class="font-semibold text-gray-800 text-sm sm:text-base">Watch video</span>
                 </div>
             </div>
 
-            <div class="w-full md:w-1/2 relative">
+            <div class="w-full md:w-1/2 h-64 md:h-auto">
                 <img src="./image.png" 
                      alt="House" class="h-full w-full object-cover">
             </div>
         </div>
 
-        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 translate-y-1/2 w-[90%] max-w-5xl bg-white rounded-full shadow-xl p-4 flex items-center justify-between border border-gray-100">
-            
-            <div class="flex items-center px-6 space-x-3 border-r border-gray-100 flex-1">
-                <i class="fas fa-map-marker-alt text-[#27ae60]"></i>
-                <div>
-                    <p class="text-sm font-bold text-gray-800">Location</p>
-                    <p class="text-xs text-gray-400">United States</p>
+        <div class="mt-6 md:absolute md:bottom-20 md:left-1/2 md:-translate-x-1/2 md:translate-y-1/2 w-full md:w-[90%] max-w-5xl bg-white rounded-3xl md:rounded-full shadow-lg p-4 flex flex-col md:flex-row items-center gap-4 border border-gray-100">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-row w-full divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                <div class="p-3 md:px-6 flex items-center space-x-3 flex-1">
+                    <i class="fas fa-map-marker-alt text-[#27ae60]"></i>
+                    <div><p class="text-xs font-bold text-gray-800">Location</p><p class="text-[10px] text-gray-400">United States</p></div>
+                </div>
+                <div class="p-3 md:px-6 flex items-center space-x-3 flex-1">
+                    <i class="far fa-calendar-alt text-[#27ae60]"></i>
+                    <div><p class="text-xs font-bold text-gray-800">Check in</p><p class="text-[10px] text-gray-400">10 Jun 2021</p></div>
+                </div>
+                <div class="p-3 md:px-6 flex items-center space-x-3 flex-1">
+                    <i class="far fa-calendar-alt text-[#27ae60]"></i>
+                    <div><p class="text-xs font-bold text-gray-800">Check out</p><p class="text-[10px] text-gray-400">15 Jun 2021</p></div>
+                </div>
+                <div class="p-3 md:px-6 flex items-center space-x-3 flex-1">
+                    <i class="fas fa-user text-[#27ae60]"></i>
+                    <div><p class="text-xs font-bold text-gray-800">Rooms for</p><p class="text-[10px] text-gray-400">1 room, 2 guests</p></div>
                 </div>
             </div>
-
-            <div class="flex items-center px-6 space-x-3 border-r border-gray-100 flex-1">
-                <i class="far fa-calendar-alt text-[#27ae60]"></i>
-                <div>
-                    <p class="text-sm font-bold text-gray-800">Check in</p>
-                    <p class="text-xs text-gray-400">10 Jun 2021</p>
-                </div>
-            </div>
-
-            <div class="flex items-center px-6 space-x-3 border-r border-gray-100 flex-1">
-                <i class="far fa-calendar-alt text-[#27ae60]"></i>
-                <div>
-                    <p class="text-sm font-bold text-gray-800">Check out</p>
-                    <p class="text-xs text-gray-400">15 Jun 2021</p>
-                </div>
-            </div>
-
-            <div class="flex items-center px-6 space-x-3 flex-1">
-                <i class="fas fa-user text-[#27ae60]"></i>
-                <div>
-                    <p class="text-sm font-bold text-gray-800">Rooms for</p>
-                    <p class="text-xs text-gray-400">1 room, 2 guests</p>
-                </div>
-            </div>
-
-            <button class="bg-[#27ae60] text-white px-10 py-4 rounded-full flex items-center space-x-2 hover:bg-green-700 transition ml-4">
+            <button class="w-full md:w-auto bg-[#27ae60] text-white px-8 py-3 rounded-2xl md:rounded-full flex items-center justify-center space-x-2 hover:bg-green-700 transition">
                 <i class="fas fa-search"></i>
-                <span class="font-medium">Search...</span>
+                <span class="font-medium text-sm">Search...</span>
             </button>
         </div>
     </main>
 
+ 
 
+</section>
 
+<section class="max-w-7xl mx-auto px-4 py-10 bg-white">
+  
+  <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 gap-4">
+    <div class="space-y-2">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Our most popular Hotels</h2>
+      <p class="text-gray-500 text-sm sm:text-base max-w-md">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </p>
+    </div>
+    <button class="bg-[#e8f5e9] text-[#27ae60] px-6 py-2 rounded-full text-sm font-medium hover:bg-green-100 transition">
+      View All
+    </button>
+  </div>
+
+  <div class="lg:flex justify-center gap-10">
+  <div class="">
+    
+    <div class="bg-[#f9f9f9] rounded-[2.5rem] overflow-hidden p-3 shadow-sm hover:shadow-md transition-all">
+      <img src="./image (1).png" 
+           alt="Hotel" 
+           class="w-full h-64 object-cover rounded-4xl">
+      
+      <div class="p-5">
+        <span class="text-[#27ae60] text-[10px] font-bold uppercase tracking-wider">London NW8 7JT England</span>
+        <h3 class="text-lg font-bold text-gray-900 mt-1 mb-4">Danubius Hotel Regents Park</h3>
+        
+        <div class="flex items-center justify-between border-t border-gray-200 pt-4">
+          <div class="flex items-center space-x-1">
+            <span class="text-sm font-bold text-gray-800">$200</span>
+            <span class="text-xs text-gray-400 font-normal">Par Night</span>
+          </div>
+          
+          <div class="flex items-center space-x-2">
+            <div class="flex text-red-400 text-[10px]">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-gray-300"></i>
+            </div>
+            <span class="text-xs font-bold text-gray-500">4.8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  <div class="">
+    
+    <div class="bg-[#f9f9f9] rounded-[2.5rem] overflow-hidden p-3 shadow-sm hover:shadow-md transition-all">
+      <img src="./image (2).png" 
+           alt="Hotel" 
+           class="w-full h-64 object-cover rounded-4xl">
+      
+      <div class="p-5">
+        <span class="text-[#27ae60] text-[10px] font-bold uppercase tracking-wider">London NW8 7JT England</span>
+        <h3 class="text-lg font-bold text-gray-900 mt-1 mb-4">Danubius Hotel Regents Park</h3>
+        
+        <div class="flex items-center justify-between border-t border-gray-200 pt-4">
+          <div class="flex items-center space-x-1">
+            <span class="text-sm font-bold text-gray-800">$200</span>
+            <span class="text-xs text-gray-400 font-normal">Par Night</span>
+          </div>
+          
+          <div class="flex items-center space-x-2">
+            <div class="flex text-red-400 text-[10px]">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-gray-300"></i>
+            </div>
+            <span class="text-xs font-bold text-gray-500">4.8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  <div class="">
+    
+    <div class="bg-[#f9f9f9] rounded-[2.5rem] overflow-hidden p-3 shadow-sm hover:shadow-md transition-all">
+      <img src="./image (3).png" 
+           alt="Hotel" 
+           class="w-full h-64 object-cover rounded-4xl">
+      
+      <div class="p-5">
+        <span class="text-[#27ae60] text-[10px] font-bold uppercase tracking-wider">London NW8 7JT England</span>
+        <h3 class="text-lg font-bold text-gray-900 mt-1 mb-4">Danubius Hotel Regents Park</h3>
+        
+        <div class="flex items-center justify-between border-t border-gray-200 pt-4">
+          <div class="flex items-center space-x-1">
+            <span class="text-sm font-bold text-gray-800">$200</span>
+            <span class="text-xs text-gray-400 font-normal">Par Night</span>
+          </div>
+          
+          <div class="flex items-center space-x-2">
+            <div class="flex text-red-400 text-[10px]">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-gray-300"></i>
+            </div>
+            <span class="text-xs font-bold text-gray-500">4.8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+</section>
 
 </body>
 </html>
