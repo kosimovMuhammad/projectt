@@ -6,8 +6,88 @@
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body>
-    
+<body class="bg-gray-50 font-sans">
+
+    <nav class="flex items-center justify-between px-12 py-6">
+        <div class="flex space-x-8 text-gray-600 font-medium ml-auto mr-12">
+            <a href="#" class="hover:text-green-600">Booking</a>
+            <a href="#" class="hover:text-green-600">Facilities</a>
+            <a href="#" class="hover:text-green-600">About Us</a>
+            <a href="#" class="hover:text-green-600">Location</a>
+            <a href="#" class="hover:text-green-600">Contact</a>
+        </div>
+        <button class="bg-[#27ae60] text-white px-8 py-2 rounded-full hover:bg-green-700 transition">
+            Login
+        </button>
+    </nav>
+
+    <main class="relative max-w-7xl mx-auto mt-4 px-6">
+        <div class="bg-white rounded-[40px] overflow-hidden flex flex-col md:flex-row shadow-sm min-h-[500px]">
+            
+            <div class="w-full md:w-1/2 p-16 flex flex-col justify-center bg-gradient-to-br from-blue-50/50 to-transparent">
+                <h1 class="text-6xl font-bold text-gray-900 leading-tight">
+                    Find your perfect <br> place to stay
+                </h1>
+                <p class="mt-6 text-gray-500 text-lg max-w-md">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                
+                <div class="mt-10 flex items-center space-x-4 cursor-pointer group">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#27ae60] group-hover:scale-110 transition">
+<img src="./Layer 2.png" alt="">                    </div>
+                    <span class="font-semibold text-gray-800">Watch video</span>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 relative">
+                <img src="./image.png" 
+                     alt="House" class="h-full w-full object-cover">
+            </div>
+        </div>
+
+        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 translate-y-1/2 w-[90%] max-w-5xl bg-white rounded-full shadow-xl p-4 flex items-center justify-between border border-gray-100">
+            
+            <div class="flex items-center px-6 space-x-3 border-r border-gray-100 flex-1">
+                <i class="fas fa-map-marker-alt text-[#27ae60]"></i>
+                <div>
+                    <p class="text-sm font-bold text-gray-800">Location</p>
+                    <p class="text-xs text-gray-400">United States</p>
+                </div>
+            </div>
+
+            <div class="flex items-center px-6 space-x-3 border-r border-gray-100 flex-1">
+                <i class="far fa-calendar-alt text-[#27ae60]"></i>
+                <div>
+                    <p class="text-sm font-bold text-gray-800">Check in</p>
+                    <p class="text-xs text-gray-400">10 Jun 2021</p>
+                </div>
+            </div>
+
+            <div class="flex items-center px-6 space-x-3 border-r border-gray-100 flex-1">
+                <i class="far fa-calendar-alt text-[#27ae60]"></i>
+                <div>
+                    <p class="text-sm font-bold text-gray-800">Check out</p>
+                    <p class="text-xs text-gray-400">15 Jun 2021</p>
+                </div>
+            </div>
+
+            <div class="flex items-center px-6 space-x-3 flex-1">
+                <i class="fas fa-user text-[#27ae60]"></i>
+                <div>
+                    <p class="text-sm font-bold text-gray-800">Rooms for</p>
+                    <p class="text-xs text-gray-400">1 room, 2 guests</p>
+                </div>
+            </div>
+
+            <button class="bg-[#27ae60] text-white px-10 py-4 rounded-full flex items-center space-x-2 hover:bg-green-700 transition ml-4">
+                <i class="fas fa-search"></i>
+                <span class="font-medium">Search...</span>
+            </button>
+        </div>
+    </main>
+
+
+
 
 </body>
 </html>
